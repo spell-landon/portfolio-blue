@@ -16,6 +16,8 @@
   font-size: 36px;
   font-weight: 400;
   margin: 1rem auto;
+  opacity: 0;
+  animation: fade 1s ease forwards;
 }
 /* Period */
 .heroContainer h1 span {
@@ -31,4 +33,27 @@
   margin: 1rem auto;
   font-family: 'Karma', sans-serif;
   font-weight: 100;
+  opacity: 0;
+  animation: fade 1s ease forwards;
+  animation-delay: 0.75s;
+}
+/* Anchor Tags */
+.heroContainer ul li a {
+  color: rgba(239, 239, 239, 0.5);
+  text-decoration: none;
+}
+.heroContainer ul li a:hover {
+  color: rgba(239, 239, 239, 1);
+  text-decoration: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

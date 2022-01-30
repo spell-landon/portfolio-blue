@@ -9,6 +9,8 @@
   padding: 2rem 1rem;
   /* margin-top: -10rem; */
   /* padding-top: 8rem; */
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
 }
 .title {
   margin-left: auto;
