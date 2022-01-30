@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import projects from '../../projects.json';
+// import projects from '../../projects';
+import { data } from '../../projects.js';
 
 function Projects(props) {
   return (
@@ -12,7 +13,7 @@ function Projects(props) {
         </h2>
         <div className={styles.line}></div>
       </div>
-      {projects.map((project) => {
+      {data.map((project) => {
         return <ProjectCard project={project} />;
       })}
     </div>
