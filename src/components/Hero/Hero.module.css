@@ -1,0 +1,34 @@
+/* Hero Container */
+.heroContainer {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+/* 'Landon Spell' */
+.heroContainer h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 1rem auto;
+}
+/* Period */
+.heroContainer h1 span {
+  color: #cc4343;
+}
+/* UL Element */
+.heroContainer ul {
+  text-align: center;
+  list-style: none;
+  font-size: 24px;
+}
+.heroContainer li {
+  margin: 1rem auto;
+  font-family: 'Karma', sans-serif;
+  font-weight: 100;
+}
