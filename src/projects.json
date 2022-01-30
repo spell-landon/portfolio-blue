@@ -5,9 +5,9 @@
     "link": "https://recipeace.netlify.app/",
     "content": "Recipeace is a single page application that lets hungry users find recipes on anything they are looking for. I utilized the Edamam API to procure data based on a search query or by clicking the randomize button which will show random recipes.",
     "images": {
-      "first": "src/assets/Recipeace/Main Landing - Desktop.png",
-      "second": "src/assets/Recipeace/Main Landing - Mobile.png",
-      "third": "src/assets/Recipeace/Recipes - Mobile.png"
+      "first": "https://github.com/spell-landon/portfolio-blue/blob/4550aefd2fbfbc8a403b2d969bf58c9b57177301/src/assets/Recipeace/Main%20Landing%20-%20Desktop.png",
+      "second": "https://github.com/spell-landon/portfolio-blue/blob/4550aefd2fbfbc8a403b2d969bf58c9b57177301/src/assets/Recipeace/Main%20Landing%20-%20Mobile.png",
+      "third": "https://github.com/spell-landon/portfolio-blue/blob/4550aefd2fbfbc8a403b2d969bf58c9b57177301/src/assets/Recipeace/Recipes%20-%20Mobile.png"
     }
   },
   {
