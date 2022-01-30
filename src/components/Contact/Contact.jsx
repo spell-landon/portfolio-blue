@@ -43,13 +43,13 @@ function Contact(props) {
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' name='user_email' required />
             <label htmlFor='phone'>
-              Phone <small>(123-456-7890)</small>
+              Phone
             </label>
             <input
               type='tel'
               id='phone'
               name='user_phone'
-              pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+              // pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
               required
             />
 
