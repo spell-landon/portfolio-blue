@@ -6,22 +6,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../../assets/hero_bg.jpg);
+  background-image: url(../../assets/lava-lake.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
 }
 /* 'Landon Spell' */
 .heroContainer h1 {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 400;
   margin: 1rem auto;
+  margin-top: -10rem;
   opacity: 0;
   animation: fade 1s ease forwards;
+  cursor: default;
 }
 /* Period */
 .heroContainer h1 span {
-  color: #cc4343;
+  color: var(--accent-red);
 }
 /* UL Element */
 .heroContainer ul {
@@ -31,8 +33,9 @@
 }
 .heroContainer li {
   margin: 1rem auto;
-  font-family: 'Karma', sans-serif;
-  font-weight: 100;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
   opacity: 0;
   animation: fade 1s ease forwards;
   animation-delay: 0.75s;
@@ -41,9 +44,11 @@
 .heroContainer ul li a {
   color: rgba(239, 239, 239, 0.5);
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 .heroContainer ul li a:hover {
   color: rgba(239, 239, 239, 1);
+  /* color: var(--accent-green); */
   text-decoration: none;
 }
 

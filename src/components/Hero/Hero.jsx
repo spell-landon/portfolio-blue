@@ -34,7 +34,7 @@ function Hero(props) {
             duration={600}>
             About
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             activeClass='active'
@@ -45,13 +45,13 @@ function Hero(props) {
             duration={600}>
             Contact
           </Link>
-        </li> */}
+        </li>
         <li>
           <a
             href='https://docs.google.com/document/d/1uMVq5JiOIEi_6B2-u-7LSNKSk9APIHIr3sUP7jtlLnA/edit?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'>
-            Resume
+            Résumé
           </a>
         </li>
       </ul>

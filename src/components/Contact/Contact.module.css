@@ -33,7 +33,7 @@
   margin: 0 auto;
 }
 .title h2 {
-  font-family: 'Source Code Pro', monospace;
+  /* font-family: 'Source Code Pro', monospace; */
   font-weight: 500;
   font-size: 24px;
 }
@@ -55,8 +55,8 @@
 }
 /* Form Label */
 .contactContainer form label {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 500;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
   color: #c4c4c4;
   font-size: 18px;
 }
@@ -69,6 +69,8 @@
   padding: 0.5rem;
   color: white;
   margin-bottom: 1rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
 }
 .contactContainer form textarea {
   max-width: 100%;
@@ -98,10 +100,11 @@
 /* Additional Area */
 .additionalLinks {
   margin-top: 2rem;
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 500;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Playfair Display', serif;
+  /* font-weight: 800; */
   color: #c4c4c4;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

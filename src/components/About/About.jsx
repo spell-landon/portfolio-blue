@@ -11,6 +11,12 @@ function About(props) {
           </h2>
           <div className={styles.line}></div>
         </div>
+        <a
+          id='image'
+          href='https://www.linkedin.com/in/landon-spell/'
+          target='_blank'
+          rel='noopener noreferrer'>
+        </a>
         <p>
           Hello, I am Landon Spell. Yeah. George. Y'know this time it wasn't my
           fault. The Doc set all of his clocks twenty-five minutes slow. Yeah, I

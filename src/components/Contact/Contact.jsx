@@ -33,7 +33,7 @@ function Contact(props) {
         <div className={styles.textSection}>
           <div className={styles.title}>
             <h2>
-              GET IN TOUCH<span>.</span>
+              Get In Touch<span>.</span>
             </h2>
             <div className={styles.line}></div>
           </div>
