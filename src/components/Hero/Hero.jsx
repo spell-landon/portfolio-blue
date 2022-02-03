@@ -1,10 +1,6 @@
 import React from 'react';
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 import styles from './Hero.module.css';
-// Elements
-import Projects from '../Projects/Projects';
-import About from '../About/About';
-import Contact from '../Contact/Contact';
 
 function Hero(props) {
   return (
@@ -13,17 +9,6 @@ function Hero(props) {
         Landon Spell<span>.</span>
       </h1>
       <ul>
-        {/* <li>
-          <Link
-            activeClass='active'
-            className='projects'
-            to='projects'
-            spy={true}
-            smooth={true}
-            duration={600}>
-            Projects
-          </Link>
-        </li>
         <li>
           <Link
             activeClass='active'
@@ -34,7 +19,18 @@ function Hero(props) {
             duration={600}>
             About
           </Link>
-        </li> */}
+        </li>
+        <li>
+          <Link
+            activeClass='active'
+            className='projects'
+            to='projects'
+            spy={true}
+            smooth={true}
+            duration={600}>
+            Projects
+          </Link>
+        </li>
         <li>
           <Link
             activeClass='active'

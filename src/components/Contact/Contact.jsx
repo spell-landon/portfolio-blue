@@ -4,6 +4,7 @@ import { init } from '@emailjs/browser';
 import styles from './Contact.module.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
+import { Element } from 'react-scroll';
 
 function Contact(props) {
   init('user_6FqX0M9JjoiaBRXBdMm6v');
@@ -27,7 +28,7 @@ function Contact(props) {
       );
   };
   return (
-    <>
+    <Element id="contact" name="contact">
       <div className={styles.background}></div>
       <div className={styles.contactContainer}>
         <div className={styles.textSection}>
@@ -85,7 +86,7 @@ function Contact(props) {
           </div>
         </div>
       </div>
-    </>
+    </Element>
   );
 }
 
