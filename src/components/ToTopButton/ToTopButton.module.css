@@ -1,5 +1,6 @@
 /* To Top Button */
 .toTopBtn {
+  z-index: 10;
   position: fixed;
   font-size: 41px;
   color: rgba(99, 134, 195, 0.1);
