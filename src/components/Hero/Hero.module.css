@@ -45,6 +45,7 @@
   color: rgba(239, 239, 239, 0.5);
   text-decoration: none;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 .heroContainer ul li a:hover {
   color: rgba(239, 239, 239, 1);
