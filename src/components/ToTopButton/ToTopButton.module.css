@@ -1,0 +1,22 @@
+/* To Top Button */
+.toTopBtn {
+  position: fixed;
+  font-size: 41px;
+  color: rgba(99, 134, 195, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 41px;
+  width: 41px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  left: calc(100% - 40px - 2rem);
+  bottom: 2rem;
+  transition: all 0.2s ease;
+}
+.toTopBtn:hover {
+  background-color: white;
+  color: #517ac2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
