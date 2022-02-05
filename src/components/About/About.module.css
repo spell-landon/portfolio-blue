@@ -58,6 +58,7 @@
 /* Paragraph */
 .textSection p {
   font-family: 'Karla', sans-serif;
+  text-align: justify;
 }
 /* UnderLine Line */
 .line {

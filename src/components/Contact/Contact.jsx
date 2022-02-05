@@ -29,7 +29,6 @@ function Contact(props) {
   };
   return (
     <Element id="contact" name="contact">
-      <div className={styles.background}></div>
       <div className={styles.contactContainer}>
         <div className={styles.textSection}>
           <div className={styles.title}>

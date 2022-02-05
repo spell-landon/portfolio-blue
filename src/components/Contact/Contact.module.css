@@ -1,6 +1,6 @@
 /* Contact Container */
 .contactContainer {
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -8,13 +8,7 @@
   background-color: rgba(29, 29, 29, 0.8);
   padding: 2rem 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-.background {
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../../assets/contact_bg.jpg);
+  background-image: url(../../assets/contact_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
