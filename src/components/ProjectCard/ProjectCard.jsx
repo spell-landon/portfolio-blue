@@ -49,9 +49,9 @@ function ProjectCard({ project }) {
           labels={true}
           showThumbs={false}>
           {desktopImages &&
-            desktopImages.map((image) => {
+            desktopImages.map((image, index) => {
               return (
-                <div>
+                <div key={index}>
                   <img src={image.image} alt={project.title} />
                   <p>{image.text}</p>
                 </div>
@@ -68,9 +68,9 @@ function ProjectCard({ project }) {
           labels={true}
           showThumbs={false}>
           {mobileImages &&
-            mobileImages.map((image) => {
+            mobileImages.map((image, index) => {
               return (
-                <div style={{ width: 300, margin: '0 auto' }}>
+                <div style={{ width: 300, margin: '0 auto' }} key={index}>
                   <img src={image.image} alt={project.title} />
                   <p>{image.text}</p>
                 </div>

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import styles from './Hero.module.css';
+import { gsap } from 'gsap';
 
 function Hero(props) {
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { ease: 'power4.inOut', duration: 2 } });
+
+    tl.to('h1', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2.2 })
+    .to('li', {opacity: 1, y:0, stagger: .2}, '-=2')
+  }, []);
+
   return (
     <div className={styles.heroContainer}>
       <h1>
