@@ -94,9 +94,7 @@
 /* Additional Area */
 .additionalLinks {
   margin-top: 2rem;
-  /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Playfair Display', serif;
-  /* font-weight: 800; */
   color: #c4c4c4;
   font-size: 20px;
   display: flex;
@@ -116,6 +114,35 @@
   color: #c4c4c4;
   transition: all 0.2s ease;
 }
-.additionalIcons a:hover {
-  color: rgb(171, 203, 252);
+.additionalIcons .linkedinIcon,
+.additionalIcons .githubIcon,
+.additionalIcons .spotifyIcon,
+.additionalIcons .youtubeIcon,
+.additionalIcons .applemusicIcon {
+  padding: 0.1rem;
+}
+.additionalIcons .linkedinIcon:hover {
+  color: rgba(44, 99, 187, 100%);
+  background-color: white;
+  border-radius: 5px;
+}
+.additionalIcons .githubIcon:hover {
+  color: rgba(36, 40, 45, 100%);
+  background-color: white;
+  border-radius: 5px;
+}
+.additionalIcons .spotifyIcon:hover {
+  color: #65d46e;
+  background-color: white;
+  border-radius: 5px;
+}
+.additionalIcons .youtubeIcon:hover {
+  color: rgba(233, 51, 34, 100%);
+  background-color: white;
+  border-radius: 5px;
+}
+.additionalIcons .applemusicIcon:hover {
+  color: rgba(230, 76, 86, 100%);
+  background-color: white;
+  border-radius: 5px;
 }
