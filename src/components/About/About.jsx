@@ -1,9 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './About.module.css';
 import { Element } from 'react-scroll';
+import { gsap } from 'gsap';
 
 function About(props) {
+  // function handleScroll() {
+  //   let tl = gsap.timeline({ defaults: { ease: 'power4.inOut', duration: 2 } });
+  //   if (window.scrollY >= 400) {
+  //     tl.to('.image', { opacity: 1, duration: 2 });
+  //   } else if (window.scrollY < 400) {
+  //     tl.to('.image', { opacity: 0, duration: 2 });
+  //   }
+  // }
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
   return (
     <Element id='about' name='about'>
       <div className={styles.aboutContainer}>
@@ -18,7 +34,8 @@ function About(props) {
             id='image'
             href='https://www.linkedin.com/in/landon-spell/'
             target='_blank'
-            rel='noopener noreferrer'></a>
+            rel='noopener noreferrer'
+            className='image'></a>
           <p>
             Hello, my name is Landon and I am a full stack software engineer. I
             am a recent graduate of the Software Engineering Program at General
@@ -38,22 +55,22 @@ function About(props) {
           <div className={styles.languages}>
             <p className={styles.codeIconsText}>Languages & Frameworks:</p>
             <div>
-              <i class='devicon-html5-plain colored'></i>
-              <i class='devicon-css3-plain colored'></i>
-              <i class='devicon-javascript-plain colored'></i>
-              <i class='devicon-react-original colored'></i>
-              <i class='devicon-nodejs-plain colored'></i>
-              <i class='devicon-mongodb-plain colored'></i>
-              <i class='devicon-express-original colored'></i>
-              <i class='devicon-heroku-original colored'></i>
+              <i className='devicon-html5-plain colored'></i>
+              <i className='devicon-css3-plain colored'></i>
+              <i className='devicon-javascript-plain colored'></i>
+              <i className='devicon-react-original colored'></i>
+              <i className='devicon-nodejs-plain colored'></i>
+              <i className='devicon-mongodb-plain colored'></i>
+              <i className='devicon-express-original colored'></i>
+              <i className='devicon-heroku-original colored'></i>
 
-              <i class='devicon-postgresql-plain colored'></i>
-              <i class='devicon-python-plain colored'></i>
-              <i class='devicon-django-plain colored'></i>
-              <i class='devicon-git-plain colored'></i>
+              <i className='devicon-postgresql-plain colored'></i>
+              <i className='devicon-python-plain colored'></i>
+              <i className='devicon-django-plain colored'></i>
+              <i className='devicon-git-plain colored'></i>
 
-              <i class='devicon-vscode-plain colored'></i>
-              <i class='devicon-figma-plain colored'></i>
+              <i className='devicon-vscode-plain colored'></i>
+              <i className='devicon-figma-plain colored'></i>
             </div>
           </div>
         </div>
