@@ -52,7 +52,7 @@ function Hero(props) {
         </li>
         <li>
           <a
-            href='https://docs.google.com/document/d/1_MdNENnLOI0o7U77l1yfmvkKODDUZy8uFkNC48yc0N4/edit?usp=sharing'
+            href='https://drive.google.com/file/d/1KZSQGxsgABGulm5y_-oNvzz_vn53dsJM/view'
             target='_blank'
             rel='noopener noreferrer'>
             Résumé
