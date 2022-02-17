@@ -32,3 +32,8 @@
   margin-left: auto;
   margin-bottom: 2rem;
 }
+
+.revProjects {
+  display: flex;
+  flex-direction: column-reverse;
+}

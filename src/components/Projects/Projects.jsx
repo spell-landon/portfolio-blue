@@ -15,9 +15,11 @@ function Projects(props) {
           </h2>
           <div className={styles.line}></div>
         </div>
-        {data.map((project, index) => {
-          return <ProjectCard project={project} key={index}/>;
-        })}
+        <div className={styles.revProjects}>
+          {data.map((project, index) => {
+            return <ProjectCard project={project} key={index} />;
+          })}
+        </div>
       </div>
     </Element>
   );
