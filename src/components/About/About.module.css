@@ -59,6 +59,7 @@
 .textSection p {
   font-family: 'Karla', sans-serif;
   text-align: justify;
+  font-size: 1.3rem;
 }
 /* UnderLine Line */
 .line {
@@ -72,6 +73,9 @@
 /* Coding Icons */
 .languages {
   margin-top: 2rem;
+}
+.languages p {
+  font-size: 1rem;
 }
 .codeIconsText {
   text-align: center;

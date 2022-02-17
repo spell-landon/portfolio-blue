@@ -1,62 +1,5 @@
 export const data = [
   {
-    title: 'Recipeace',
-    github: 'https://github.com/spell-landon/recipeace',
-    link: 'https://recipeace.netlify.app/',
-    content:
-      'Recipeace is a single page application that lets hungry users find recipes on anything they are looking for. I utilized the Edamam API to procure data based on a search query, or by clicking the randomize button which will show random recipes.',
-    images: {
-      desktop: [
-        {
-          image: '/images/Recipeace/desktop/landing.png',
-          text: 'Landing Page - Desktop',
-        },
-        {
-          image: '/images/Recipeace/desktop/recipes.png',
-          text: 'Recipes Page - Desktop',
-        },
-        {
-          image: '/images/Recipeace/desktop/recipes_expanded.png',
-          text: 'Recipes (Expanded) Page - Desktop',
-        },
-        {
-          image: '/images/Recipeace/desktop/recipes_random.png',
-          text: 'Recipes (Random) Page - Desktop',
-        },
-        {
-          image: '/images/Recipeace/desktop/about.png',
-          text: 'About Page - Desktop',
-        },
-      ],
-      mobile: [
-        {
-          image: '/images/Recipeace/mobile/landing.png',
-          text: 'Landing Page - Mobile',
-        },
-        {
-          image: '/images/Recipeace/mobile/recipes.png',
-          text: 'Recipes Page - Mobile',
-        },
-        {
-          image: '/images/Recipeace/mobile/recipes_search.png',
-          text: 'Recipes (Search) Page - Mobile',
-        },
-        {
-          image: '/images/Recipeace/mobile/recipes_expanded.png',
-          text: 'Recipes (Expanded) Page - Mobile',
-        },
-        {
-          image: '/images/Recipeace/mobile/recipes_random.png',
-          text: 'Recipes (Random) Page - Mobile',
-        },
-        {
-          image: '/images/Recipeace/mobile/about.png',
-          text: 'About Page - Mobile',
-        },
-      ],
-    },
-  },
-  {
     title: 'Flash Cards',
     github: 'https://github.com/spell-landon/flash-cards',
     link: 'https://spell-landon.github.io/flash-cards/',
@@ -121,6 +64,63 @@ export const data = [
         {
           image: '/images/FlashCards/mobile/losing.png',
           text: 'Losing Page - Mobile',
+        },
+      ],
+    },
+  },
+  {
+    title: 'Recipeace',
+    github: 'https://github.com/spell-landon/recipeace',
+    link: 'https://recipeace.netlify.app/',
+    content:
+      'Recipeace is a single page application that lets hungry users find recipes on anything they are looking for. I utilized the Edamam API to procure data based on a search query, or by clicking the randomize button which will show random recipes.',
+    images: {
+      desktop: [
+        {
+          image: '/images/Recipeace/desktop/landing.png',
+          text: 'Landing Page - Desktop',
+        },
+        {
+          image: '/images/Recipeace/desktop/recipes.png',
+          text: 'Recipes Page - Desktop',
+        },
+        {
+          image: '/images/Recipeace/desktop/recipes_expanded.png',
+          text: 'Recipes (Expanded) Page - Desktop',
+        },
+        {
+          image: '/images/Recipeace/desktop/recipes_random.png',
+          text: 'Recipes (Random) Page - Desktop',
+        },
+        {
+          image: '/images/Recipeace/desktop/about.png',
+          text: 'About Page - Desktop',
+        },
+      ],
+      mobile: [
+        {
+          image: '/images/Recipeace/mobile/landing.png',
+          text: 'Landing Page - Mobile',
+        },
+        {
+          image: '/images/Recipeace/mobile/recipes.png',
+          text: 'Recipes Page - Mobile',
+        },
+        {
+          image: '/images/Recipeace/mobile/recipes_search.png',
+          text: 'Recipes (Search) Page - Mobile',
+        },
+        {
+          image: '/images/Recipeace/mobile/recipes_expanded.png',
+          text: 'Recipes (Expanded) Page - Mobile',
+        },
+        {
+          image: '/images/Recipeace/mobile/recipes_random.png',
+          text: 'Recipes (Random) Page - Mobile',
+        },
+        {
+          image: '/images/Recipeace/mobile/about.png',
+          text: 'About Page - Mobile',
         },
       ],
     },
