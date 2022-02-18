@@ -7,8 +7,12 @@ function Hero(props) {
   useEffect(() => {
     let tl = gsap.timeline({ defaults: { ease: 'power4.inOut', duration: 2 } });
 
-    tl.to('h1', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2.2 })
-    .to('li', {opacity: 1, y:0, stagger: .2}, '-=2')
+    tl.to('h1', {
+      'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
+      opacity: 1,
+      y: 0,
+      duration: 2.2,
+    }).to('li', { opacity: 1, y: 0, stagger: 0.2 }, '-=2');
   }, []);
 
   return (
@@ -52,7 +56,7 @@ function Hero(props) {
         </li>
         <li>
           <a
-            href='https://drive.google.com/file/d/1KZSQGxsgABGulm5y_-oNvzz_vn53dsJM/view'
+            href='https://docs.google.com/document/d/e/2PACX-1vQ4ueFjCe7BkZFfSYjtIpjjd1QeM5St2NN1Gd8hP1514JUMu-POKSIYuR8ohgXXdYW9B653yIluaTxB/pub'
             target='_blank'
             rel='noopener noreferrer'>
             Résumé
