@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import styles from './Hero.module.css';
 import { gsap } from 'gsap';
+import image from '../../assets/lava-lake.png';
 
 function Hero(props) {
   useEffect(() => {
@@ -17,6 +18,7 @@ function Hero(props) {
 
   return (
     <div className={styles.heroContainer}>
+      <img src={image} loading='eager' alt='Hero' />
       <h1>
         Landon Spell<span>.</span>
       </h1>

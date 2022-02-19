@@ -6,10 +6,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../../assets/lava-lake.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(../../assets/lava-lake.png); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   padding: 1rem;
+}
+.heroContainer img {
+  object-fit: cover;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
 }
 /* 'Landon Spell' */
 .heroContainer h1 {
