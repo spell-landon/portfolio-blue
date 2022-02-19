@@ -202,4 +202,61 @@ export const data = [
       ],
     },
   },
+  {
+    title: 'Petfindr',
+    github: 'https://github.com/PetFindrSEI',
+    link: 'https://petfindr.netlify.app/',
+    content:
+      'Petfindr is the place to go for any pet whether lost or found. If you have lost a pet, you can browse our dashboard to see if anyone has posted about your lost furry friend! If they are reported as found, you can contact them right from the website! You can also post any pets that you have found to help reunite pets and owners!',
+    images: {
+      desktop: [
+        {
+          image: '/images/Petfindr/desktop/landing.png',
+          text: 'Landing Page - Desktop',
+        },
+        {
+          image: '/images/Petfindr/desktop/dashboard.png',
+          text: 'Dashboard - Desktop',
+        },
+        {
+          image: '/images/PetFindr/desktop/filter.png',
+          text: 'Filter Results - Desktop',
+        },
+        {
+          image: '/images/PetFindr/desktop/howitworks_menu.png',
+          text: 'How It Works / Menu - Desktop',
+        },
+        {
+          image: '/images/PetFindr/desktop/report_pet.png',
+          text: 'Report a Pet - Desktop',
+        },
+      ],
+      mobile: [
+        {
+          image: '/images/PetFindr/mobile/landing.png',
+          text: 'Landing Page - Mobile',
+        },
+        {
+          image: '/images/PetFindr/mobile/dashboard.png',
+          text: 'Dashboard - Mobile',
+        },
+        {
+          image: '/images/PetFindr/mobile/login.png',
+          text: 'Login - Mobile',
+        },
+        {
+          image: '/images/PetFindr/mobile/register.png',
+          text: 'Register Account - Mobile',
+        },
+        {
+          image: '/images/PetFindr/mobile/menu.png',
+          text: 'Menu - Mobile',
+        },
+        {
+          image: '/images/PetFindr/mobile/report.png',
+          text: 'Report a Pet - Mobile',
+        },
+      ],
+    },
+  },
 ];

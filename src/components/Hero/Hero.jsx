@@ -18,7 +18,7 @@ function Hero(props) {
 
   return (
     <div className={styles.heroContainer}>
-      <img src={image} loading='eager' alt='Hero' />
+      <img src={image} loading='lazy' alt='Hero' />
       <h1>
         Landon Spell<span>.</span>
       </h1>
