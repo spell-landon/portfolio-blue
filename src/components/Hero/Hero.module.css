@@ -1,6 +1,6 @@
 /* Hero Container */
 .heroContainer {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,18 +11,34 @@
   background-size: cover; */
   padding: 1rem;
 }
-.heroContainer img {
+/* .heroContainer img {
   object-fit: cover;
   position: absolute;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
+  opacity: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.heroImg {
+  width: 100%;
+  background-image: url('../../assets/lava-lake.png');
+  height: 100vh;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
 }
 /* 'Landon Spell' */
 .heroContainer h1 {
   font-size: 42px;
   font-weight: 400;
   margin: 1rem auto;
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
   opacity: 0;
   /* animation: fade 1s ease forwards; */
   cursor: default;
@@ -62,6 +78,25 @@
   text-decoration: none;
 }
 
+/* Arrow Icon */
+.arrowIcon {
+  z-index: 2;
+  font-size: 3rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  opacity: 0;
+  /* color: #aa5d59; */
+  animation: arrowColor 3s ease-in-out infinite alternate;
+}
+.textArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  height: 100vh;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -70,5 +105,15 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes arrowColor {
+  0% {
+    color: var(--accent-red);
+    /* color: #aa5d59; */
+  }
+  100% {
+    color: white;
   }
 }

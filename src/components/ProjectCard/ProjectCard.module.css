@@ -68,10 +68,10 @@
 }
 /* Bottom Border Line */
 .line {
-  height: 2px;
+  height: 1px;
   width: 95vw;
   max-width: 800px;
-  background-color: black;
+  background-color: rgba(239, 239, 239, 0.5);
   opacity: 0.2;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -91,6 +91,6 @@
 }
 @media (max-width: 500px) {
   .carousel {
-    width: calc(100vw - 2rem)
+    width: calc(100vw - 2rem);
   }
 }
