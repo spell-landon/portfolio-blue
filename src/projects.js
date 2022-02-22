@@ -207,7 +207,7 @@ export const data = [
     github: 'https://github.com/PetFindrSEI',
     link: 'https://petfindr.netlify.app/',
     content:
-      'Petfindr is the place to go for any pet whether lost or found. If you have lost a pet, you can browse our dashboard to see if anyone has posted about your lost furry friend! If they are reported as found, you can contact them right from the website! You can also post any pets that you have found to help reunite pets and owners!',
+      'PetFindr was built as the final project during my 4 month course at the General Assembly Software Engineering Bootcamp. This was built using React for the frontend, and Django / PostgreSQL on the backend. Photo storage is handled by AWS and everything is deployed with Netlify and Heroku. Petfindr is the place to go for any pet whether lost or found. If you have lost a pet, you can browse our dashboard to see if anyone has posted about your lost furry friend! If they are reported as found, you can contact them right from the website! You can also post any pets that you have found to help reunite pets and owners!',
     images: {
       desktop: [
         {
