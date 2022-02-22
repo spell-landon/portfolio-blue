@@ -32,6 +32,21 @@ function Hero(props) {
         scrollTrigger: {
           trigger: '#heroContainer',
           start: 'bottom 50%',
+          end: '+=10%',
+          scrub: 1,
+        },
+        opacity: 0,
+      }
+    );
+    gsap.fromTo(
+      '#textArea',
+      {
+        opacity: 1,
+      },
+      {
+        scrollTrigger: {
+          trigger: '#heroContainer',
+          start: 'bottom 10%',
           end: '+=30%',
           scrub: 1,
         },
@@ -44,7 +59,7 @@ function Hero(props) {
     <div className={styles.heroContainer} id='heroContainer'>
       {/* <img src={image} loading='lazy' alt='Hero' /> */}
       <section className={styles.heroImg}></section>
-      <div className={styles.textArea}>
+      <div className={styles.textArea} id='textArea'>
         <h1>
           Landon Spell<span>.</span>
         </h1>

@@ -109,11 +109,8 @@
 }
 
 @keyframes arrowColor {
-  0% {
-    color: var(--accent-red);
-    /* color: #aa5d59; */
-  }
   100% {
-    color: white;
+    color: var(--accent-red);
+    transform: scale(1.2);
   }
 }

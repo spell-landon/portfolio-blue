@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { init } from '@emailjs/browser';
 import styles from './Contact.module.css';
@@ -13,6 +13,14 @@ import { SiApplemusic } from 'react-icons/si';
 function Contact(props) {
   init('user_6FqX0M9JjoiaBRXBdMm6v');
   const form = useRef();
+  const submitBtn = useRef();
+  const [disable, setDisable] = useState(false);
+  const [msgSent, setMsgSent] = useState(false);
+  useEffect(() => {
+    setMsgSent(false);
+    setDisable(false);
+  }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -24,12 +32,16 @@ function Contact(props) {
       )
       .then(
         (result) => {
+          setMsgSent(true);
+          setDisable(true);
           console.log(result.text);
         },
         (error) => {
+          setMsgSent(false);
           console.log(error.text);
         }
-      );
+      )
+      .then(form.current.reset());
   };
   return (
     <Element id='contact' name='contact'>
@@ -47,13 +59,7 @@ function Contact(props) {
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' name='user_email' required />
             <label htmlFor='phone'>Phone</label>
-            <input
-              type='tel'
-              id='phone'
-              name='user_phone'
-              // pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
-              required
-            />
+            <input type='tel' id='phone' name='user_phone' required />
 
             <label htmlFor='message'>Message</label>
             <textarea
@@ -64,8 +70,12 @@ function Contact(props) {
               name='message'
               required
             />
-            <button className={styles.submitBtn} type='submit'>
-              Send Message
+            <button
+              className={styles.submitBtn}
+              type='submit'
+              ref={submitBtn}
+              disabled={disable}>
+              <p id='btnText'>{!msgSent ? 'Send Message' : 'Message Sent!'}</p>
             </button>
           </form>
           <div className={styles.additionalLinks}>

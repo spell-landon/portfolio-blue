@@ -71,6 +71,7 @@
 }
 /* Submit Button */
 .submitBtn {
+  display: flex;
   font-family: 'Pridi', serif;
   font-weight: 300;
   color: #c4c4c4;
