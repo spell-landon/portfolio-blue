@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './About.module.css';
 import { Element } from 'react-scroll';
-import { gsap } from 'gsap';
 
 function About(props) {
   // function handleScroll() {

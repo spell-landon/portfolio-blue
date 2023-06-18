@@ -259,4 +259,78 @@ export const data = [
       ],
     },
   },
+  {
+    title: `Fat Daddy's BBQ`,
+    github: 'https://github.com/spell-landon/fat_daddys_texas_bbq',
+    link: 'https://fatdaddystexasbbq.netlify.app/',
+    content: `This project initially started as something to practice coding back in March of 2021. My cousin said she and her husband were going to open a restaurant called "Fat Daddy's Texas BBQ" so I thought "Why not attempt to build them a website?". At that time, with beginners knowledge, I created everything with vanilla HTML, CSS, JS. After attending GA, I have learned a lot of new techniques that really cleaned up my code. I found this project again and decided it needed an overhaul!`,
+    images: {
+      desktop: [
+        {
+          image: '/images/FatDaddys/desktop/landing.png',
+          text: 'Landing Page - Desktop',
+        },
+        {
+          image: '/images/FatDaddys/desktop/menu.png',
+          text: 'Food Menu - Desktop',
+        },
+        {
+          image: '/images/FatDaddys/desktop/about.png',
+          text: 'About Page - Desktop',
+        },
+      ],
+      mobile: [
+        {
+          image: '/images/FatDaddys/mobile/landing.png',
+          text: 'Landing Page - Mobile',
+        },
+        {
+          image: '/images/FatDaddys/mobile/menu.png',
+          text: 'Food Menu - Mobile',
+        },
+        {
+          image: '/images/FatDaddys/mobile/about.png',
+          text: 'About Page - Mobile',
+        },
+      ],
+    },
+  },
+  {
+    title: `ZOX`,
+    github: null,
+    link: 'https://zox.la',
+    content: `Currently I'm here at ZOX! I have developed front-end components and pages utilizing Bit, TypeScript, TailwindCSS, Builder.io, and various other libraries/tools, while adhering to specified design requirements. A majority, I'd say approximately 90% of the front-end code for the new ZOX website, I have created. During this process, I have actively engaged in weekly L10 meetings, effectively utilizing JIRA for project management and documentation. Adapted seamlessly to the company's Git workflow and maintained a successful balance in a hybrid work schedule.`,
+    images: {
+      desktop: [
+        {
+          image: '/images/ZOX/desktop/landing.png',
+          text: 'Landing Page - Desktop',
+        },
+        {
+          image: '/images/ZOX/desktop/collection.png',
+          text: 'Collection - Desktop',
+        },
+        {
+          image: '/images/ZOX/desktop/product_page.png',
+          text: 'Product Page - Desktop',
+        },
+        {
+          image: '/images/ZOX/desktop/new_releases.png',
+          text: 'New Releases Page - Desktop',
+        },
+        {
+          image: '/images/ZOX/desktop/cart_flyout.png',
+          text: 'Cart Flyout - Desktop',
+        },
+        {
+          image: '/images/ZOX/desktop/cart_flyout_filled.png',
+          text: 'Cart Flyout - Filled - Desktop',
+        },
+        {
+          image: '/images/ZOX/desktop/cart_page.png',
+          text: 'Cart Page - Desktop',
+        },
+      ],
+    },
+  },
 ];
