@@ -1,4 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import emailjs from '@emailjs/browser';
 import { init } from '@emailjs/browser';
 import styles from './Contact.module.css';
@@ -9,6 +12,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { FaSpotify } from 'react-icons/fa';
 import { SiYoutubemusic } from 'react-icons/si';
 import { SiApplemusic } from 'react-icons/si';
+import { FiClipboard } from 'react-icons/fi';
 
 function Contact(props) {
   init('user_6FqX0M9JjoiaBRXBdMm6v');
@@ -21,28 +25,85 @@ function Contact(props) {
     setDisable(false);
   }, []);
 
-  const sendEmail = (e) => {
+  const ErrorToast = () => {
+    const handleCopy = () => {
+      navigator.clipboard.writeText('spell.landon@gmail.com');
+      toast.success('Email copied to clipboard!', {
+        containerId: 'copy-toast',
+        autoClose: 3000,
+      });
+    };
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <span style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>
+          Message failed to send.
+        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span
+            onClick={handleCopy}
+            role='button'
+            tabIndex={0}
+            onKeyDown={(e) =>
+              (e.key === 'Enter' || e.key === ' ') && handleCopy()
+            }
+            aria-label='Copy email to clipboard'
+            style={{
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              color: '#007bff',
+              textDecoration: 'underline',
+            }}>
+            spell.landon@gmail.com
+          </span>
+          <button
+            onClick={handleCopy}
+            aria-label='Copy email address'
+            style={{
+              padding: '2px 6px',
+              border: '1px solid #ccc',
+              backgroundColor: '#f0f0f0',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+            }}>
+            <FiClipboard size={16} />
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
+    setDisable(true);
+
+    try {
+      await emailjs.sendForm(
         'service_ibv2jze',
         'template_en0ykqb',
         form.current,
         'user_6FqX0M9JjoiaBRXBdMm6v'
-      )
-      .then(
-        (result) => {
-          setMsgSent(true);
-          setDisable(true);
-          console.log(result.text);
-        },
-        (error) => {
-          setMsgSent(false);
-          console.log(error.text);
-        }
-      )
-      .then(form.current.reset());
+      );
+      setMsgSent(true);
+      toast.success('Message sent successfully!', {
+        containerId: 'main-toast',
+      });
+      form.current.reset();
+    } catch (error) {
+      setMsgSent(false);
+      setDisable(false);
+      console.error('EmailJS Error:', error);
+      toast.error(<ErrorToast />, {
+        containerId: 'main-toast',
+        toastId: 'email-fail',
+        autoClose: false,
+        closeOnClick: false,
+        draggable: true,
+      });
+    }
   };
+
   return (
     <Element id='contact' name='contact'>
       <div className={styles.contactContainer}>
@@ -115,6 +176,16 @@ function Contact(props) {
           </div>
         </div>
       </div>
+      <ToastContainer
+        containerId='main-toast'
+        position='bottom-right'
+        autoClose={5000}
+      />
+      <ToastContainer
+        containerId='copy-toast'
+        position='bottom-center'
+        autoClose={3000}
+      />
     </Element>
   );
 }
